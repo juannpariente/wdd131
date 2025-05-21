@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 3fr 1fr
+}
+
+header {
+    background-color: rgb(48, 48, 48);
+    grid-column: 1 / 3;
+    color: white;
+}
+
+main {
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+}
+
+aside {
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+}
+
+footer {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 10px 0 70px;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 35px 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header p {
+    padding: 10px;
+}
