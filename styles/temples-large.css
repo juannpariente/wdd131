@@ -17,7 +17,7 @@
         display: flex;
     }
 
-    .navigation p {
+    h1 {
         flex: 2;
     }
 }
