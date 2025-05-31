@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+header, footer {
+    background-color: #CFA66B;
+    color: black;
+    padding: 15px;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #CFA66B;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: white;
+}
+
+.navigation p {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+main {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+figcaption {
+    text-align: center;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+#menu {
+    border: none;
+    background-color: #cfa56b00;
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 2rem;
+    height: 1rem;
+    z-index: 10;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
