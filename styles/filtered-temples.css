@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+header, footer {
+    background-color: #CFA66B;
+    color: black;
+    padding: 15px;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #CFA66B;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+main {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+    max-width: 100%;
+}
+
+.figures div {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    padding: 30px;
+    max-width: 100%;
+}
+
+.figures img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin: 15px 0;
+    box-shadow: 0px 0px 12px 1px black;
+    border: 1px outset white;
+    max-width: 100%;
+}
+
+.figures p {
+    text-align: center;
+    margin: 3px;
+}
+
+.temple-info {
+    color: navy;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+footer p {
+    text-align: center;
+}
+
+#menu {
+    border: none;
+    background-color: #cfa56b00;
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 2rem;
+    height: 1rem;
+    z-index: 10;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
