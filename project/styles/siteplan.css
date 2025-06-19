@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+.flex {
+    display: flex;
+    margin: 0.5rem;
+    gap: 20px;
+    align-items: center;
+}
+
+h2 {
+    margin: 1.5rem 0;
+}
+
+p {
+    margin: 1rem;
+}
+
+div {
+    margin: 1rem;
+}
+
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 15px;
+}
+
+.component-background {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px outset white;
+    box-shadow: 0 0 10px 5px black;
+    margin-top: 2rem;
+}
+
+.wireframe {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile {
+    width: 300px;
+    height: auto;
+}
+
+.desktop {
+    width: 1000px;
+    height: auto;
+}
+
+.flex img {
+    width: 125px;
+    height: auto;
+    border-radius: 10px;
+}
