@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Essentials | Home</title>
+    <meta name="description" content="WDD 131 | Project">
+    <meta name="author" content="Juan Pariente">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <img src="images/essential-logo.png" alt="logo" loading="lazy" width="150" height="150">
+            <h1>PC Essentials</h1>
+            <button type="button" id="menu" aria-label="Abrir menú"></button>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="components.html">Components</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-cta">
+            <picture class="hero">
+                <source srcset="images/hero-desktop.webp" media="(min-width: 700px)">
+                <img class="hero-img" src="images/hero-mobile.jpg" alt="hero" loading="lazy" width="400" height="600">
+            </picture>
+            <div class="cta">
+                <p>Discover high-quality PC components today!</p>
+                <a href="components.html">Get my component</a>
+            </div>
+        </section>
+        <section>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>At PC Essentials, we're passionate about providing quality PC components to help you build the perfect setup. Whether you're a gamer, creator, or tech enthusiast, our carefully selected products make upgrading your PC simple and reliable. We believe in transparency, great service, and helping you make informed choices.</p>
+            </div>
+        </section>
+        <section class="components-card">
+            <div class="card">
+                <img src="images/gpu.webp" alt="GPU" loading="lazy" width="200" height="150">
+                <p>A graphics card, also known as a GPU (Graphics Processing Unit), is a vital component responsible for rendering images, videos, and animations on your computer screen. It processes complex graphical data and ensures smooth visuals, making it essential for gaming, video editing, 3D modeling, and other graphic-intensive tasks. High-performance GPUs can significantly enhance your computer's visual capabilities and overall experience.</p>
+            </div>
+            <div class="card">
+                <img src="images/cpu.webp" alt="CPU" loading="lazy" width="200" height="150">
+                <p>The processor, or Central Processing Unit (CPU), is often called the brain of the computer. It carries out instructions from software and hardware, performing calculations and managing data flow. The CPU's speed and number of cores directly impact how efficiently your computer runs applications and handles multiple tasks simultaneously.</p>
+            </div>
+            <div class="card">
+                <img src="images/motherboard.webp" alt="Motherboard" loading="lazy" width="200" height="150">
+                <p>The motherboard is the central circuit board that connects and allows communication between all the components of your computer, such as the CPU, RAM, storage devices, and peripherals. It provides the necessary slots and ports for hardware installation and serves as the backbone of your system, ensuring all parts work seamlessly together.</p>
+            </div>
+            <div class="card">
+                <img src="images/ram.webp" alt="Ram" loading="lazy" width="200" height="150">
+                <p>RAM, or Random Access Memory, is a type of volatile memory that temporarily stores data your computer actively uses. It plays a crucial role in system performance by enabling quick access to applications and files currently in use. More RAM allows for better multitasking and faster execution of programs, improving overall computing speed.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🖥 PC Essentials 🖥 Uruguay</p>
+    </footer>
+</body>
+</html>

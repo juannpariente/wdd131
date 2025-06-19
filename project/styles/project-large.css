@@ -1,0 +1,40 @@
+@media screen and (min-width: 700px){
+    #components {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    nav {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 1500px;
+        height: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav a:hover {
+        background-color: black;
+        border: 1px outset white;
+        box-shadow: 0 0 10px 5px black;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+
+    .cta {
+        flex: 0 0 30%;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

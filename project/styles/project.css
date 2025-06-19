@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+header, footer {
+    background-color: #001f3f;
+    padding: 1rem;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+#menu {
+    border: none;
+    background-color: #cfa56b00;
+    color: black;
+    font-size: 3rem;
+    margin-left: auto;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 2rem;
+    height: 1rem;
+    z-index: 10;
+}
+
+#menu::before {
+	content: "≡";
+    color: white;
+}
+
+#menu.show::before {
+    content: "X";
+    color: white;
+    z-index: 30;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+.cta {
+    text-align: center;
+    margin: 3rem;
+}
+
+.cta a {
+    text-decoration: none;
+    color: black;
+    border: 3px outset green;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cta a:hover {
+    background-color: green;
+    color: white;
+}
+
+.cta p {
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.about-us {
+    background-color: #001f3f;
+    background: linear-gradient(to right, #001f3f81, transparent);
+    padding: 1.5rem;
+    margin: 1rem 1rem 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.components-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.components-card img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.components-card div {
+    margin: 1.5rem;
+    background-color: #e2e2e2;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+}
+
+#components {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.button {
+    border: 3px outset green;
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 600;
+    width: 10rem;
+    box-shadow: 0 0 10px 3px black;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, green, rgb(0, 68, 0));
+    color: white;
+    border: 3px outset white;
+}
+
+.cart {
+    background-color: rgb(221, 221, 221);
+    border: 1px outset rgb(122, 122, 122);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+li::marker{
+    content: "🛒";
+}
+
+#sum {
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
